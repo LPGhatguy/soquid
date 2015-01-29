@@ -7,10 +7,10 @@
 
 local soquid
 soquid = {
-	version = "1.0.0",
+	version = "1.0.1",
 	versionMajor = 1,
 	versionMinor = 0,
-	versionRevision = 0,
+	versionRevision = 1,
 
 	partials = {},
 
@@ -37,7 +37,7 @@ soquid = {
 	}
 }
 
-local block_pattern = "{%%%s*(.-)%s*%%}" --matches {% block %}
+local block_pattern = "%-?%-?%s*{%%%s*(.-)%s*%%}" --matches {% block %}
 local put_pattern = "^=%s*(.+)" --matches the inner part of {%= output %}
 
 local function load_with_environment(code, environment)

@@ -3,7 +3,7 @@ Soquid is a templating "framework" designed to avoid any sort of fuss. Soquid en
 
 Soquid works with nearly any type of document, including HTML, Markdown, or even code files!
 
-##Hello World
+## Hello World
 Generating HTML
 ```lua
 local soquid = require("soquid")
